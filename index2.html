@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suryansh Niranjan 😎</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body class="antialiased">
+<div id="preloader">
+        <h1 class="glitch" data-text="Loading...">Loading...</h1>
+    </div>
+
+    <div class="custom-cursor"></div>
+
+    <div id="scroll-progress"></div>
+
+    <canvas id="particle-canvas"></canvas>
+
+    <nav
+        class="navbar fixed top-0 left-0 w-full z-50 py-4 px-4 sm:px-6 md:px-12 flex justify-between items-center rounded-b-lg">
+
+        <div class="text-2xl font-bold uppercase tracking-wider">
+            <a href="#hero" class="glitcha" data-text="Suryansh">Suryansh</a>
+        </div>
+        <div class="hamburger-menu md:hidden" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul
+            class="nav-menu hidden md:flex md:flex-row flex-col items-center space-y-4 md:space-y-0 md:space-x-8 text-lg font-medium">
+            <li><a href="#about" class="nav-link " data-text="About">About</a></li>
+            <li><a href="#skills" class="nav-link " data-text="Skills">Skills</a></li>
+            <li><a href="#projects" class="nav-link " data-text="Projects">Projects</a></li>
+            <li><a href="#contact" class="nav-link " data-text="Contact">Contact</a></li>
+
+            <!-- Footer-style links shown in mobile view only -->
+            <li class="border-t border-gray-700 w-full my-4 md:hidden"></li>
+
+            <li class="flex justify-center items-center gap-6 text-2xl md:hidden">
+                <a href="https://github.com/codexloner"
+                    class="glitcha hover:text-primary-color transition transform hover:scale-125" data-text="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/suryansh-niranjan-729606312/"
+                    class="glitcha hover:text-primary-color transition transform hover:scale-125"
+                    data-text="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/hecodeslogic"
+                    class="glitcha hover:text-primary-color transition transform hover:scale-125"
+                    data-text="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:codexloner@gmail.com"
+                    class="glitcha hover:text-primary-color transition transform hover:scale-125" data-text="Email"><i
+                        class="fas fa-envelope"></i></a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <section id="hero"
+        class="relative text-center text-text-light flex flex-col justify-center items-center min-h-screen pt-20 px-4">
+        <h1 class="text-6xl md:text-7xl font-extrabold mb-4 animate-fadeIn">
+            Suryansh Niranjan
+        </h1>
+        <p class="text-2xl md:text-3xl text-secondary-color mb-8 typing-effect" id="hero-subtitle"></p>
+        <p class="max-w-3xl text-lg md:text-xl leading-relaxed opacity-0 animate-fadeIn delay-1000">
+            I'm a passionate <strong>Frontend Developer</strong> dedicated to building stunning, responsive, and
+            intuitive user interfaces. I love bringing designs to life with elegant code and crafting seamless digital
+            experiences.
+        </p>
+        <a href="#" class="btn-primary mt-6 text-sm px-4 py-2">
+            Resume
+        </a>
+        <a href="#about" class="btn-primary mt-6 text-sm px-4 py-2">
+            About Me
+        </a>
+        <a href="#projects" class="btn-primary mt-6 text-sm px-4 py-2">
+            View My Work
+        </a>
+
+    </section>
+
+
+    <section id="hero"
+        class="relative text-center text-text-light flex flex-col justify-center items-center min-h-screen pt-20 px-4">
+        <h1 class="text-6xl md:text-7xl font-extrabold mb-4 animate-fadeIn">
+            Suryansh Niranjan
+        </h1>
+        <p class="text-2xl md:text-3xl text-secondary-color mb-8 typing-effect" id="hero-subtitle"></p>
+        <p class="max-w-3xl text-lg md:text-xl leading-relaxed opacity-0 animate-fadeIn delay-1000">
+            I'm a passionate <strong>Frontend Developer</strong> dedicated to building stunning, responsive, and
+            intuitive user interfaces. I love bringing designs to life with elegant code and crafting seamless digital
+            experiences.
+        </p>
+        <a href="#projects" class="btn-primary mt-12 opacity-0 animate-fadeIn delay-1500">
+            Resume
+        </a>
+        <a href="#about" class="btn-primary mt-12 opacity-0 animate-fadeIn delay-1500">
+            About Me
+        </a>
+        <a href="#projects" class="btn-primary mt-12 opacity-0 animate-fadeIn delay-1500">
+            View My Work
+        </a>
+    </section>
+
+    <section id="about" class="bg-gradient-to-br from-gray-900 to-black text-text-light px-4">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-4xl font-bold text-primary-color mb-12">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center md:space-x-12">
+
+                <!-- Circular Profile Picture -->
+                <div class="rounded-full overflow-hidden border-4 profile-pic-container transform transition duration-500 hover:scale-105
+                  w-48 h-48 md:w-64 md:h-64 flex-shrink-0 bg-gray-800 mb-8 md:mb-0">
+                    <img src="me.png" alt="Profile Picture" class="object-cover w-full h-full rounded-full" />
+                </div>
+
+                <!-- About Text -->
+                <div class="text-left">
+                    <p class="text-lg mb-4">
+                        Hello! I'm a passionate <strong>Frontend Web Developer</strong> with a keen eye for detail and a
+                        love for creating engaging user experiences. My journey in tech started with a fascination for
+                        interactive web elements, which quickly evolved into a commitment to mastering the art of the
+                        browser.
+                    </p>
+                    <!-- <p class="text-lg">
+                        I specialize in translating complex designs into clean, efficient, and responsive code. I'm
+                        always eager to learn new libraries, frameworks, and best practices to push the boundaries of
+                        what's possible on the web. Let's build something awesome together!
+                    </p> -->
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="bg-black text-text-light px-4">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="text-4xl font-bold text-primary-color mb-12">My Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <div class="p-6 rounded-lg shadow-xl border border-gray-700 card-base">
+                    <h3 class="text-xl font-semibold mb-3 text-primary-color">Core Frontend</h3>
+                    <ul class="list-disc list-inside text-left space-y-2 text-gray-400">
+                        <li>HTML5, CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>Responsive Design</li>
+                        <li>Cross-Browser Comp.</li>
+                        <li>Web Performance</li>
+                    </ul>
+                </div>
+                <!-- <div class="p-6 rounded-lg shadow-xl border border-gray-700 card-base">
+                    <h3 class="text-xl font-semibold mb-3 text-primary-color">Frameworks & Libs</h3>
+                    <ul class="list-disc list-inside text-left space-y-2 text-gray-400">
+                        <li>React.js</li>
+                        <li>Redux / Zustand</li>
+                        <li>Next.js (Frontend)</li>
+                        <li>Vue.js (Optional)</li>
+                        <li>jQuery (Optional)</li>
+                    </ul>
+                </div> -->
+                <div class="p-6 rounded-lg shadow-xl border border-gray-700 card-base">
+                    <h3 class="text-xl font-semibold mb-3 text-primary-color">Styling & UI</h3>
+                    <ul class="list-disc list-inside text-left space-y-2 text-gray-400">
+                        <li>Tailwind CSS</li>
+                        <!-- <li>Sass / Less</li>
+                        <li>Styled Components</li> -->
+                        <li>GSAP (Animations)</li>
+                        <li>Framer Motion</li>
+                    </ul>
+                </div>
+                <div class="p-6 rounded-lg shadow-xl border border-gray-700 card-base">
+                    <h3 class="text-xl font-semibold mb-3 text-primary-color">Tools & Workflow</h3>
+                    <ul class="list-disc list-inside text-left space-y-2 text-gray-400">
+                        <li>Git, GitHub</li>
+                        <!-- <li>Webpack, Vite</li>
+                        <li>npm / Yarn</li> -->
+                        <li>Chrome DevTools</li>
+                        <li>Figma / Sketch</li>
+                    </ul>
+                </div>
+                <div class="p-6 rounded-lg shadow-xl border border-gray-700 card-base">
+                    <h3 class="text-xl font-semibold mb-3 text-primary-color">Databases & other languages</h3>
+                    <ul class="list-disc list-inside text-left space-y-2 text-gray-400">
+                        <li>SQL</li>
+                        <li>MongoDB</li>
+                        <li>Java</li>
+                        <li>kotlin</li>
+                        <li>Pyhton</li>
+                        <li>C</li>
+                    </ul>
+                </div>
+                <div class="p-6 rounded-lg shadow-xl border border-gray-700 card-base">
+                    <h3 class="text-xl font-semibold mb-3 text-primary-color">Others</h3>
+                    <ul class="list-disc list-inside text-left space-y-2 text-gray-400">
+                        <li>Canva</li>
+                        <!-- <li>Sass / Less</li>
+                        <li>Styled Components</li> -->
+                        <li>Photoshop</li>
+                        <li>Filmora</li>
+                        <li>PowerDirector 365</li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="bg-gradient-to-br from-gray-900 to-black text-text-light px-4">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl font-bold text-primary-color mb-12">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="rounded-lg p-6 shadow-xl border border-gray-700 card-base">
+                    <h3 class="text-2xl font-semibold mb-3 text-primary-color">Interactive login Web</h3>
+                    <p class="text-gray-400 text-sm mb-4"> Responsive Frontend Application</p>
+                    <p class="mb-4">Developed a highly interactive and responsive Login page </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="tech-tag text-xs px-3 py-1 rounded-full">Html</span>
+                        <span class="tech-tag text-xs px-3 py-1 rounded-full">js</span>
+                        <span class="tech-tag text-xs px-3 py-1 rounded-full">Tailwind CSS</span>
+                    </div>
+                    <a href="" class="text-secondary-color hover:underline font-medium flex items-center justify-end">
+                        View Project
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="rounded-lg p-6 shadow-xl border border-gray-700 card-base">
+                    <h3 class="text-2xl font-semibold mb-3 text-primary-color">Birthday Wishing</h3>
+                    <p class="text-gray-400 text-sm mb-4">Responsive Frontend Application</p>
+                    <p class="mb-4">Developed a highly interactive and responsive Birthday wishing Website having
+                        mind-blowing animations.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="tech-tag text-xs px-3 py-1 rounded-full">HTML5</span>
+                        <span class="tech-tag text-xs px-3 py-1 rounded-full">Tailwind Css</span>
+                        <span class="tech-tag text-xs px-3 py-1 rounded-full">JS</span>
+                    </div>
+                    <a href="#" class="text-secondary-color hover:underline font-medium flex items-center justify-end">
+                        View Project
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="rounded-lg p-6 shadow-xl border border-gray-700 card-base">
+                    <h3 class="text-2xl font-semibold mb-3 text-primary-color">Mentorship</h3>
+                    <p class="text-gray-400 text-sm mb-4">Mentorship Interactive Website</p>
+                    <p class="mb-4">Designed and developed a highly animated Mentorship website showcasing mentors and
+                        their skills.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="tech-tag text-xs px-3 py-1 rounded-full">HTML5</span>
+                        <span class="tech-tag text-xs px-3 py-1 rounded-full">CSS3</span>
+                        <span class="tech-tag text-xs px-3 py-1 rounded-full">JavaScript</span>
+                        <!-- <span class="tech-tag text-xs px-3 py-1 rounded-full">GSAP</span> -->
+                    </div>
+                    <a href="#" class="text-secondary-color hover:underline font-medium flex items-center justify-end">
+                        View Project
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-black text-text-light px-4">
+        <div class="container mx-auto max-w-2xl">
+            <h2 class="text-4xl font-bold text-primary-color mb-12">Get In Touch</h2>
+            <p class="mb-8 text-lg">
+                Have a project in mind or just want to say hello? Feel free to reach out! I'm excited to collaborate on
+                innovative frontend solutions.
+            </p>
+            <form id="contact-form" class="space-y-6 text-left">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-400 mb-2">Name</label>
+                    <input type="text" id="name" name="name"
+                        class="w-full p-3 rounded-md focus:ring-2 focus:ring-secondary-color" required>
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-400 mb-2">Email</label>
+                    <input type="email" id="email" name="email"
+                        class="w-full p-3 rounded-md focus:ring-2 focus:ring-secondary-color" required>
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-400 mb-2">Message</label>
+                    <textarea id="message" name="message" rows="6"
+                        class="w-full p-3 rounded-md focus:ring-2 focus:ring-secondary-color" required></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </div>
+                <div id="form-message" class="text-center mt-4 text-lg hidden"></div>
+            </form>
+            <div class="mt-12 text-center">
+                <p class="text-xl text-primary-color mb-4">Or connect directly:</p>
+                <div class="flex items-center justify-center space-x-4">
+                    <span id="email-address"
+                        class="text-lg text-text-light border border-gray-700 px-4 py-2 rounded-md cursor-pointer hover:border-primary-color transition duration-300">
+                        codexloner@gmail.com
+                    </span>
+                    <button id="copy-email-btn" class="btn-primary text-sm px-4 py-2 rounded-md">
+                        <i class="fas fa-copy"></i> Copy
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 py-8 text-center text-gray-500 text-sm border-t border-gray-800">
+        <p>&copy; 2025 Suryansh Niranjan. All rights reserved.</p>
+        <div class="flex justify-center space-x-6 mt-4 text-2xl">
+            <a href="https://github.com/codexloner"
+                class="text-gray-400 hover:text-primary-color transition duration-300 transform hover:scale-125"><i
+                    class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/suryansh-niranjan-729606312/"
+                class="text-gray-400 hover:text-primary-color transition duration-300 transform hover:scale-125"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/hecodeslogic"
+                class="text-gray-400 hover:text-primary-color transition duration-300 transform hover:scale-125"><i
+                    class="fab fa-instagram"></i></a>
+            <a href=" mailto:codexloner@gmai.com"
+                class="text-gray-400 hover:text-primary-color transition duration-300 transform hover:scale-125"><i
+                    class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="rounded-full">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+
+    <script src="script.js">
+</script>
+    <script src="lock.js"></script>
+</body>
+
+</html>
